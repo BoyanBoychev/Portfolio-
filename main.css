@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  height: 100vh;
+  margin-left: 250px;
+  margin-right: 450px;
+  transition: all 2.0s ease-in-out; 
+  }
+
+  #items-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .item {
+    display: inline-block;
+    text-align: center;
+    border: none;
+  }
+  
+  .item img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    border: none;
+  }
+
+  .textImages {
+    margin-top: 400px;
+    margin-left: -410px;
+    display: flex;
+    font-size: 20px;
+    font-family: Courier;
+    color: #0000008c;
+}
+  
+  .item.dragging {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  
+  .item.hidden {
+    display: none;
+  }
+  
+  .animate {
+    animation-name: disappear;
+    animation-duration: 1s;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+
+  
+  
+  @keyframes disappear {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+
+  
