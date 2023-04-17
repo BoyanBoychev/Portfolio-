@@ -264,6 +264,7 @@ img {
     text-align: center;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
+    margin-bottom: 3px;
 }
 
 /*=============== SCROLL BAR ===============*/
@@ -284,19 +285,52 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 428px) {
     .container{
         margin-left: 1rem;
         margin-right: 1rem;
+        margin-bottom: 1px;
+    }
+
+    .profile__info {
+        column-gap: 1.5rem;
     }
 
     .profile__info{
-        column-gap: 1.5rem;
+        justify-content: center;
+        margin-left: 110px;
     }
+
 
     .profile__buttons{
         flex-direction: column;
         row-gap: 1rem;
+    }
+
+    .footer__copy{
+        margin-left: 185px;
+        justify-content: center;
+        margin-bottom: 2px;
+    }
+
+    
+
+    .projects__card{
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        
+    }
+
+    
+    .projects__card img{
+        width:25%;
+        height: 90%;
+    }
+    
+    .projects__card img {
+        cursor: pointer;
     }
 }
 
@@ -307,16 +341,21 @@ img {
         justify-content: center;
     }
 
+
     .filters__content{
         width: 332px;
         margin: 3rem auto;
     }
+
+
+
 }
 
 @media screen and (min-width: 776px){
     .projects__content{
         grid-template-columns: repeat(2, 332px);
     }
+
 }
 
 /* For large devices */
